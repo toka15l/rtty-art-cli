@@ -1,0 +1,18 @@
+{
+  "name": "rtty-art-cli",
+  "version": "1.0.0",
+  "description": "Outputs text based artwork created from an input image. Optimized for Teletype Model 15 character set and only outputs characters within this set.",
+  "main": "index.js",
+  "author": "Steven C Lawson",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "pixelmatch": "mapbox/pixelmatch",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "@types/pngjs": "^6.0.1",
+    "prettier": "^2.8.4"
+  }
+}
