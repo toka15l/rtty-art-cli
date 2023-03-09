@@ -11,8 +11,6 @@
     "pngjs": "^7.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.14.6",
-    "@types/pngjs": "^6.0.1",
     "prettier": "^2.8.4"
   }
 }
