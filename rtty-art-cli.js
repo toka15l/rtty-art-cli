@@ -18,9 +18,7 @@ for (let i = 0; i < references.length; i++) {
 
  sharp(options.path)
     .resize(columns * width)
-    .png()
-    .toFile('TEMP.png').then(() => {fs.createReadStream('TEMP.png')
-     .pipe(new PNG())
+    .png().pipe(new PNG())
      .on("parsed", function () {
          try {
              for (let sectionY = 0; sectionY < Math.floor(this.height / height); sectionY++) {
@@ -56,5 +54,5 @@ for (let i = 0; i < references.length; i++) {
          } catch (e) {
              console.log(e);
          }
-     });}).catch((e) => console.log(e));
+     });
 
